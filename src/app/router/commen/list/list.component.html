@@ -1,0 +1,12 @@
+
+<!--组件-->
+<h4>
+  组件：
+  <span>(组件传参、service)</span>
+</h4>
+
+<ul class="table-items clear">
+  <li class="item" *ngFor="let message of messageList">
+    <a href="javascript:void(0)" (click)="goToDetail()">点击进入detail页面{{message}}</a>
+  </li>
+</ul>

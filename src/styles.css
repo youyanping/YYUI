@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+.clear {
+  zoom: 1;
+  overflow: hidden;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+ul li a{
+  display: block;
+  color: #666;
+  text-decoration: none;
+}
+.main-container{
+  width: 100%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+.section{
+  margin-bottom: 50px;
+}
+.items .item{
+  border-bottom: 1px solid #e4e4e4;
+}
+.item>a{
+  padding: 10px 20px;
+}
+.item>a:hover{
+  background-color: #f8f8f8;
+}
+h4{
+  padding-left: 10px;
+  margin: 10px 0;
+  border-left: 3px solid red;
+}
+h4 span{
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+}
