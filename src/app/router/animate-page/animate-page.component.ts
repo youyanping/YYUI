@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {fadeIn} from "../../utils/animations";
+import {fadeIn, transform} from "../../utils/animations";
 
 declare var $:any;
 
@@ -7,10 +7,11 @@ declare var $:any;
   selector: 'app-animate-page',
   templateUrl: './animate-page.component.html',
   styleUrls: ['./animate-page.component.css'],
-  animations: [fadeIn]
+  animations: [fadeIn,transform]
 })
 export class AnimatePageComponent implements OnInit {
-  public show = false;
+  public show1 = false;
+  public show2 = false;
   public example = "$aaron.animate({\n" +
     "                height: '50'  //属性\n" +
     "              }, {\n" +
@@ -24,10 +25,16 @@ export class AnimatePageComponent implements OnInit {
 
   ngOnInit() {
     var that = this;
-    $(".ag .item a").mouseenter(function(){
-      that.show = true;
+    $(".ag .item1 a").mouseenter(function(){
+      that.show1 = true;
     }).mouseleave(function(){
-      that.show = false;
+      that.show1 = false;
+    });
+
+    $(".ag .item2 a").mouseenter(function(){
+      that.show2 = true;
+    }).mouseleave(function(){
+      that.show2 = false;
     });
 
     var $aaron = $("#aaron");

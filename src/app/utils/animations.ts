@@ -15,3 +15,19 @@ export const fadeIn = trigger('fadeIn', [
     ]))
   ])
 ]);
+
+export const transform = trigger('transform', [
+ // state('in', style({ left: '0' })), // 默认元素不展开
+  transition('void => *', [ // 进场动画
+    animate(200, keyframes([
+      style({ left: '-100px'}),
+      style({ left: '0px'})
+    ]))
+  ]),
+  transition('* => void', [ // 进场动画
+    animate(200, keyframes([
+      style({ left: '0px'}),
+      style({ left: '-100px'})
+    ]))
+  ])
+]);
