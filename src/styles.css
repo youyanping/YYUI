@@ -102,6 +102,7 @@ img {
   justify-content: center;
   text-align: center;
   min-height: 168px;
+  overflow: hidden;
 }
 .table-items.items25 .item{
   width:25%;

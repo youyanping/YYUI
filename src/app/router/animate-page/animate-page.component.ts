@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import {fadeIn} from "../../utils/animations";
 
 declare var $:any;
 
 @Component({
   selector: 'app-animate-page',
   templateUrl: './animate-page.component.html',
-  styleUrls: ['./animate-page.component.css']
+  styleUrls: ['./animate-page.component.css'],
+  animations: [fadeIn]
 })
 export class AnimatePageComponent implements OnInit {
-
+  public show = false;
   public example = "$aaron.animate({\n" +
     "                height: '50'  //属性\n" +
     "              }, {\n" +
@@ -21,6 +23,12 @@ export class AnimatePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    var that = this;
+    $(".ag .item a").mouseenter(function(){
+      that.show = true;
+    }).mouseleave(function(){
+      that.show = false;
+    });
 
     var $aaron = $("#aaron");
     $("#exec").click(function() {
@@ -140,4 +148,6 @@ export class AnimatePageComponent implements OnInit {
 
 
   }
+
+
 }

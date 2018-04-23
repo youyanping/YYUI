@@ -13,6 +13,7 @@ import {AppRoutingModule} from "./AppRouting .module";
 import {UserInfoService} from "./service/userInfo.service";
 import {HttpService} from "./service/http.service";
 import {AnimatePageComponent} from "./router/animate-page/animate-page.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {AnimatePageComponent} from "./router/animate-page/animate-page.component
   imports: [
     BrowserModule,
     CommonModule,
+    BrowserAnimationsModule,
     AppRoutingModule  //导入路由模块
   ],
   providers: [UserInfoService,HttpService],  //新建的service文件 要在此处添加这些依赖

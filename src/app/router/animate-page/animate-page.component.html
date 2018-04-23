@@ -1,4 +1,25 @@
 <div class="main-container">
+  <section class="ag">
+    <h3>ag 内置动画</h3>
+    <div>这是angularjs的animate；ts导入、页面属性加上@fadeIn；可用于ngIf控制的元素</div>
+    <ul class="table-items items25 clear">
+      <li class="item">
+        <a href="javascript:void(0)">
+          <div>
+            <img src="assets/images/test.jpg" alt="">
+            <div class="describe" *ngIf="show==true" @fadeIn>
+              <div>
+                这是angularjs的animate<br>
+                ts导入、页面属性加上@fadeIn<br>
+                用于ngIf控制的元素
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <section>
     <h3>只做了webkit兼容的css3动画</h3>
     <ul class="table-items items25 clear">
