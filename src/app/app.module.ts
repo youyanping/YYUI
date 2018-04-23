@@ -12,6 +12,7 @@ import {LayoutComponent} from "./layout/layout/layout.component";
 import {AppRoutingModule} from "./AppRouting .module";
 import {UserInfoService} from "./service/userInfo.service";
 import {HttpService} from "./service/http.service";
+import {AnimatePageComponent} from "./router/animate-page/animate-page.component";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {HttpService} from "./service/http.service";
     HeaderComponent,
     LayoutWithFooterComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    AnimatePageComponent
   ],
   imports: [
     BrowserModule,

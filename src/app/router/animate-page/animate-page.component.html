@@ -1,0 +1,127 @@
+<div class="main-container">
+  <section>
+    <h3>只做了webkit兼容的css3动画</h3>
+    <ul class="table-items items25 clear">
+      <li class="item">
+        <div>鼠标移入动画</div>
+        <a href="javascript:void(0)">
+          <div>
+            <img src="assets/images/test.jpg" alt="">
+            <div class="cover">
+              <div>
+                <h5>涉及到的动画属性：</h5>
+                <ul>
+                  <li>background-color</li>
+                  <li>opacity</li>
+                  <li>width</li>
+                  <li>height</li>
+                  <li>-webkit-transform</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="item">
+        <div>无限循环动画</div>
+        <a href="javascript:void(0)">
+          <div class="spinner"></div>
+        </a>
+      </li>
+      <li class="item">
+        <div>animation-delay</div>
+        <a href="javascript:void(0)">
+          <div class="spinner2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="line5"></div>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <div>巧用border</div>
+        <a href="javascript:void(0)">
+          <div class="spinner3"></div>
+        </a>
+      </li>
+      <li class="item all">
+        <div>鼠标移入</div>
+        <a href="javascript:void(0)">
+          <div>
+            <img class="img" src="http://img.mukewang.com/55594b500001c51406000338-240-135.jpg">
+            <div class="mask">
+              <div class="info">
+                <h3>BEATIFUL DAY</h3>
+                <p>Description goes here</p>
+              </div>
+            </div>
+            <div class="border"></div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <div>transform旋转动画</div>
+    <div class="cardfan">
+      <img src="http://img.mukewang.com/55594b500001c51406000338-240-135.jpg" width="300" height="200">
+      <img src="http://img.mukewang.com/5707589c00017bf606000338-240-135.jpg" width="300" height="200">
+      <img src="http://szimg.mukewang.com/5aa781790001ba2c05400300-360-202.jpg" width="300" height="200">
+    </div>
+
+    <div>钟表旋转</div>
+    <div class="stage">
+      <img src="http://p0.qhimg.com/t0197c451833414523e.png" alt="钟表" class="watch"/>
+      <img src="http://p9.qhimg.com/t0145f1ae8ad6753b05.png" alt="秒针" class="seconds">
+    </div>
+  </section>
+
+  <section>
+    <h3>jq动画</h3>
+    <div style="margin: 10px 0;">
+      <select id="animation">
+        <option value="1">动画1</option>
+        <option value="2">动画2</option>
+        <option value="3">动画3</option>
+        <option value="4">动画4</option>
+        <option value="5">动画step动画</option>
+        <option value="6">动画progress回调</option>
+      </select>
+      <input id="exec" type="button" value="执行动画">
+      <input id="exec1" type="button" value="停止当前动画">
+      <input id="exec2" type="button" value="停止所有动画">
+      <input id="exec3" type="button" value="停止动画直接跳到动画结束">
+    </div>
+
+    <div id="aaron">
+      <h4>语法</h4>
+      <p>.animate( properties ,[ duration ], [ easing ], [ complete ] )</p>
+      <p>.animate( properties, options ) 两个对象</p><br>
+
+      <h4>options参数</h4>
+      <p>duration - 设置动画执行的时间</p>
+      <p>easing - 规定要使用的 easing 函数，过渡使用哪种缓动函数</p>
+      <p>step：规定每个动画的每一步完成之后要执行的函数</p>
+      <p>progress：每一次动画调用的时候会执行这个回调，就是一个进度的概念</p>
+      <p>complete：动画完成回调</p>
+      <p>例如：</p>
+      <pre [innerHTML]="example"></pre>
+    </div>
+  </section>
+  <section>
+    <ul>
+      <li class="li0" style="width:200px;height:100px;background-color: red;margin-bottom:20px"></li>
+      <li class="li0" style="width:200px;height:100px;background-color: red;margin-bottom:20px"></li>
+      <li class="li0" style="width:200px;height:100px;background-color: red;"></li>
+    </ul>
+  </section>
+
+  <section>
+    <ul>
+      <li class="li1" style="width:100px;height:100px;background-color: green;margin-bottom:20px"></li>
+      <li class="li1" style="width:100px;height:100px;background-color: green;margin-bottom:20px"></li>
+    </ul>
+  </section>
+</div>

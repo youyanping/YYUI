@@ -2,17 +2,21 @@
 
   <div class="section">
     <h4>路由跳转方式、路由传参：</h4>
-    <ul class="items">
-      <li class="item">
+    <ul class="cells">
+      <li class="cell">
         <a href="javascript:void(0)" routerLink="/layout1/detail2" [queryParams]="{id:'520'}">routerLink 方式跳转到另一种布局(只有头部)，并带参数</a>
       </li>
-      <li class="item">
+      <li class="cell">
         <a href="javascript:void(0)" routerLink="/layout2/detail" [queryParams]="{id:'1314'}">routerLink 方式跳转到另一种布局(只有尾部)，并带参数</a>
       </li>
-      <li class="item">
+      <li class="cell">
         <a href="javascript:void(0)" (click)="goToDetail()">click 函数跳转，并带参数</a>
       </li>
     </ul>
+  </div>
+  <div class="section">
+    <h4>动画效果：</h4>
+    <a href="javascript:void(0)" routerLink="/animate">css3、jq 动画效果</a>
   </div>
 
   <div class="section">

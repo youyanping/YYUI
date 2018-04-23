@@ -4,6 +4,7 @@ import {LayoutComponent} from "./layout/layout/layout.component";
 import {DetailComponent} from "./router/detail/detail.component";
 import {LayoutWithHeaderComponent} from "./layout/layout-with-header/layout-with-header.component";
 import {LayoutWithFooterComponent} from "./layout/layout-with-footer/layout-with-footer.component";
+import {AnimatePageComponent} from "./router/animate-page/animate-page.component";
 
 //按不同的布局方式来划分路由
 const routes: Route[] = [
@@ -14,7 +15,8 @@ const routes: Route[] = [
     children: [
       { path: '', redirectTo: 'main', pathMatch: 'full' },
       { path: 'main', loadChildren: './router/main/main.module#MainModule'},  //懒加载方式路由
-      { path: 'detail', component: DetailComponent }  //组件方式的路由
+      { path: 'detail', component: DetailComponent },  //组件方式的路由
+      { path: 'animate', component: AnimatePageComponent }
     ]
   },
   //布局二 头部+内容

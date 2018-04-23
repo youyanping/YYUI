@@ -5,7 +5,7 @@ declare  var $:any;  //要用到$ ，需要先在index导入jquery
 
 export class HttpService{
 
-  public URL:any="https:///";  //接口地址
+  public URL:any="https://shopservice.dongcai.top/";  //接口地址
 
   constructor(){
   }
