@@ -1,27 +1,29 @@
-# MyProject1
+# angularjs-demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+本项目 angular/cli 版本：1.7.4，更高版本也可运行
 
-## Development server
+这是一个 基于angularjs的 pc 端 web 项目框架，包括路由跳转，布局划分，接口数据请求，动画效果，组件封装等基本功能。
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 安装 Angular CLI
 
-## Code scaffolding
+$ npm install -g @angular/cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 前提
 
-## Build
+首先确认安装了 node.js 和 npm 和 Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+$ node -v
 
-## Running unit tests
+$ npm -v
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+$ ng version
 
-## Running end-to-end tests
+## 下载本项目，在项目文件夹下运行
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+$ npm install (如果下载速度太慢，可先设置淘宝镜像 npm config set registry https://registry.npm.taobao.org ，但是需要注意有时候淘宝镜像下载的包不是最新的)
 
-## Further help
+## 启动项目
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+$ ng serve 
+
+浏览器访问  http://localhost:4200
