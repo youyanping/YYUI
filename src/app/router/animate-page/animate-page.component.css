@@ -1,0 +1,10 @@
+.describe{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}

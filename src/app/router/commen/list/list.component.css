@@ -1,0 +1,17 @@
+.describe{
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  transition:bottom 0.5s ease-in-out;
+  -webkit-transition:bottom 0.5s ease-in-out;
+}
+.table-items .item>a:hover .describe{
+  bottom:0px;
+  transition:bottom 0.5s ease-in-out;
+  -webkit-transition:bottom 0.5s ease-in-out;
+}
